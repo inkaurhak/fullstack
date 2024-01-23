@@ -1,4 +1,5 @@
-sequenceDiagram
+```mermaid
+    sequenceDiagram
     participant selain
     participant palvelin
 
@@ -28,5 +29,6 @@ sequenceDiagram
 
     selain->>palvelin: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate palvelin
-    palvelin-->>selain: [{"content": "testi", "date": "2023-17-1" }, ... ]
+    palvelin-->>selain: [{"content": "testi", "date": "2024-23-1" }, ... ]
     deactivate palvelin 
+```
