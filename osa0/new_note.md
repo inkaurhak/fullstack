@@ -8,7 +8,7 @@
     palvelin-->>selain: 302
     deactivate palvelin
 
-    note left of palvelin: palvelin vastaa uudelleenohjauspyynnöllä, jolla se kehottaa selainta tekemään automaattisesti uuden GET- pyynnön osoitteeseen notes.
+    note left of palvelin: Palvelin vastaa uudelleenohjauspyynnöllä, jolla se kehottaa selainta tekemään automaattisesti uuden GET- pyynnön osoitteeseen notes.
 
     selain->>palvelin: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate palvelin
@@ -25,7 +25,7 @@
     palvelin-->>selain: the JavaScript file
     deactivate palvelin
 
-    note right of selain: selain alkaa suorittamaan JavaScript-koodia joka noutaa JSON:n palvelimelta
+    note right of selain: Selain alkaa suorittamaan JavaScript-koodia joka noutaa JSON-tiedoston palvelimelta
 
     selain->>palvelin: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate palvelin
