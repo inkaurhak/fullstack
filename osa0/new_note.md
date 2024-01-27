@@ -5,7 +5,7 @@
 
     selain->>palvelin: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate palvelin
-    palvelin-->>selain: 302
+    palvelin-->>selain: HTML document / uudelleenohjauspyyntö
     deactivate palvelin
 
     note left of palvelin: Palvelin vastaa uudelleenohjauspyynnöllä, jolla se kehottaa selainta tekemään automaattisesti uuden GET- pyynnön osoitteeseen notes.
