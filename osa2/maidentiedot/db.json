@@ -1,4 +1,5 @@
-[
+{
+  "countries": [
     {
       "name": {
         "common": "Kuwait",
@@ -53040,3 +53041,4 @@
       }
     }
   ]
+}

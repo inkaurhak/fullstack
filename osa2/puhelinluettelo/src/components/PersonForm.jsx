@@ -27,7 +27,6 @@ const PersonForm = (props) => {
                 props.setMessage(null)
               }, 5000)
             })
-            // EI TOIMI
             .catch(error => {
               props.setErrorMessage(`Information of ${person.name} has already been removed from server`)
               setTimeout(() => {
@@ -48,6 +47,13 @@ const PersonForm = (props) => {
           props.setMessage(`${nameObject.name} added`)
           setTimeout(() => {
             props.setMessage(null)
+          }, 5000)
+        })
+        .catch(error => {
+          console.log(error.response.data)
+          props.setErrorMessage(error.response.data.error)
+          setTimeout(() => {
+            props.setErrorMessage(null)
           }, 5000)
         })
     }
